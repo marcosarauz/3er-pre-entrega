@@ -1,0 +1,251 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/* estilos para mobile */
+/* index */
+@media screen and (min-width:200px){
+    .cat{
+        text-align: center;
+    }
+    .img{
+        @include widht-heigth
+    }
+    .home{
+        font-size: 25px;
+        background-color: $color-terciario;
+        color: $color-secundario;
+        text-align: center;
+    }
+    .home-dos{
+        font-size: 15px;
+    }
+    .centro{
+        @include widht-heigth
+    }
+    .medios{
+        text-align: center;
+        text-decoration: none;
+        background-color: $color-terciario;
+        color: $color-secundario;
+        display: grid;
+        margin: 10px;
+    }
+    .pagos{
+        list-style: none;
+        background-color: $color-terciario;
+        color: $color-secundario;
+        display: inline-block;
+        margin: 10px;
+        padding: 2%;
+    }
+    .derechos{
+        font-size: 20px;
+        text-align: center;
+    }
+    /* estilos de ropa masculina */
+    .masc{
+        @include widht-heigth
+    }
+    .rop{
+        background-color: $color-terciario;
+        margin: 10px;
+        padding: 2px;
+    }
+    .ropa-m{
+        text-decoration: none;
+        color: $color-secundario;
+        text-align: center;
+    }
+    .card{
+        width: 325px;
+       @include flex
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+    .conteiner-uno{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .legend{
+        background-color: $color-terciario;
+        color: $color-secundario;
+        text-align: center;
+    }
+    .p{
+        margin: 10px;
+        font-size: 15px;
+        color: $color-terciario;
+    }
+    .text{
+        font-size: 18px;
+        text-align: center;
+    }
+    /* estilos para ropa femenina */
+    .fem{
+        @include widht-heigth
+    }
+    /* estilos para lenceria erotica */
+    .len{
+       @include widht-heigth
+    }
+    /* estilos de contactos */
+    .rapi{
+     @include widht-heigth
+    }
+    .azul{
+        list-style: none;
+        display: inline-block;
+        margin: 10px;
+        background-color: $color-terciario;
+        color: aliceblue;
+        padding: 2%;
+    }
+    .rosa{
+        list-style: none;
+        margin: 8px;
+        background-color: $color-terciario;
+        color: $color-secundario;
+        text-align: center;
+    }
+    .ubi{
+        background-color: $color-terciario;
+        color: aliceblue;
+        margin: 16px;
+    }
+}
+/* estilos para tablet */
+       /* index */
+@media screen and (min-width:400px){
+    .img{
+        width: 300px;
+        height: 300px;
+    }
+    .home{
+        font-size: 40px;
+    }
+    .home-dos{
+        font-size: 25px;
+    }
+    .centro{
+        @include widht-heigth
+    }
+    .pagos{
+        margin-left: 50px;
+    }
+    .derechos{
+        font-size: 25px;
+    }
+    /* ropa masculina */
+    .masc{
+        @include widht-heigth
+    }
+    .section-uno{
+        display: flex;
+    }
+    .card{
+        margin: 8px 10px 10px 8px;
+    }
+    .p{
+        @include font-size
+    }
+    .text{
+        font-size: 30px;
+    }
+    /* ropa femenina */
+    .fem{
+        @include widht-heigth
+    }
+    .section-dos{
+        display: flex;
+    }
+    /* lenceria erotica */
+    .len{
+        @include widht-heigth
+    }
+    .section-tres{
+        display: flex;
+    }
+    /* contactos */
+    .rapi{
+        @include widht-heigth
+    }
+    .azul{
+        margin: 0px 0px 2px 90px;
+    }
+    .medios{
+        font-size: 30px;
+    }
+    .rosa{
+        font-size: 25px;
+        margin: 40px;
+    }
+    .ubi{
+        text-align: center;
+        padding: 1%;
+    }
+}
+/* estilos para desktop */
+/* index */
+@media screen and (min-width:1024px){
+    .img{
+        width: 35%;
+        height: 10%;
+    }
+    .home{
+        font-size: 50px;
+    }
+    .home-dos{
+        font-size: 30px;
+    }
+    .centro{
+       @include widht-heigth
+    }
+    .medios{
+       @include font-size
+    }
+    .pagos{
+       @include font-size
+    }
+    .derechos{
+        @include font-size
+    }
+    /* ropa masculina */
+    .masc{
+        width: 30%;
+        height: 30%;
+    }
+    .rop{
+        padding: 20px;
+    }
+    .card{
+        margin-left: 50px;
+    }
+    /* ropa femenina */
+    .fem{
+        width: 30%;
+        height: 30%;
+    }
+    .len{
+        width: 30%;
+        height: 30%;
+    }
+    /* contactos */
+    .rapi{
+        width: 30%;
+        height: 30%;
+    }
+    .azul{
+        margin-left: 90px;
+    }
+    .medios{
+        padding: 1%;
+    }
+    .p{
+        font-size: 20px;
+    }
+    .text{
+        font-size: 20px;
+    }
+}
