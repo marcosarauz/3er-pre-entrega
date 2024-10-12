@@ -41,7 +41,7 @@
     text-decoration: none;
     background-color: black;
     color: aliceblue;
-    display: grid;
+    display: inline-block;
     margin: 10px;
   }
   .pagos {
@@ -129,11 +129,15 @@
     background-color: black;
     color: aliceblue;
     text-align: center;
+    padding: 2%;
+    display: inline-block;
   }
   .ubi {
     background-color: black;
     color: aliceblue;
     margin: 16px;
+    padding: 2%;
+    text-align: center;
   }
 }
 /* estilos para tablet */
@@ -211,19 +215,24 @@
     text-align: center;
     padding: 1%;
   }
+  .mapa{
+    width: 100%;
+  }
 }
 /* estilos para desktop */
 /* index */
 @media screen and (min-width: 1024px) {
   .img {
-    width: 35%;
+    width: 20%;
     height: 10%;
   }
   .home {
     font-size: 50px;
   }
   .home-dos {
-    font-size: 30px;
+    font-size: 20px;
+    width: 70%;
+    margin-left: 1%;
   }
   .centro {
     width: 100%;
@@ -234,6 +243,7 @@
   }
   .pagos {
     font-size: 20px;
+    margin-left: 12%;
   }
   .derechos {
     font-size: 20px;
@@ -264,16 +274,16 @@
     height: 30%;
   }
   .azul {
-    margin-left: 90px;
-  }
-  .medios {
-    padding: 1%;
+    margin-left: 15%;
   }
   .p {
     font-size: 20px;
   }
   .text {
     font-size: 20px;
+  }
+  .mapa{
+    width: 100%;
   }
 }
 
